@@ -35,7 +35,7 @@ macx {
 		DESTDIR = ../Linux
 
 		isEqual(OUTPUTDIR, "") {
-			target.path = /usr/local/bin
+			target.path = /usr/bin
 		} else {
 			target.path = $$OUTPUTDIR
 		}
