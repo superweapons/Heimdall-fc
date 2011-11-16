@@ -778,10 +778,6 @@ uninstall-am: uninstall-binPROGRAMS uninstall-udevrulesDATA
 	uninstall-udevrulesDATA
 
 
-@LINUXTARGET_TRUE@install-data-hook:
-@LINUXTARGET_TRUE@@UDEVADM_TRUE@	sudo udevadm control --reload_rules
-@LINUXTARGET_TRUE@@UDEVADM_FALSE@	sudo service udev restart
-
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
